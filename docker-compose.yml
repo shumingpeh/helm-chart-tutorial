@@ -1,0 +1,12 @@
+services:
+  fastapi:
+    restart: always
+    build: .
+    container_name: fastapi
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/src/app
+    command: uvicorn app.main:app --host 0.0.0.0 --reload --debug
