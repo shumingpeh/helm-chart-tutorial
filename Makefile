@@ -1,9 +1,9 @@
 lint: ## Lint code
-	flake8 src/ tests/ --count
+	flake8 app/ src/ tests/ --count
 
 
 format: ## Format code
-	black src/ tests/
+	black app/ src/ tests/
 
 
 pytest: ## pytest

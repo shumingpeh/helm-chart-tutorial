@@ -23,6 +23,7 @@ class AdditionModelOutput(BaseModel):
     output_sum: int
     curation_name: str = "addition"
 
+
 # logging
 class AdditionEndpointLog(BaseModel):
     param: AdditionModelParam
