@@ -23,7 +23,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: default
+  name: personal-projects
 
 container:
   port: 5555
@@ -43,7 +43,7 @@ securityContext:
   # runAsUser: 1000
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 80
 
 ingress:
